@@ -1,7 +1,7 @@
 from django.test import TestCase
 from django.urls import reverse
 
-class BusinessViewTestCase(TestCase):
+class RestaurantViewTestCase(TestCase):
     def test_view_output(self):
         url = reverse("hello-world")
         response = self.client.get(url)
