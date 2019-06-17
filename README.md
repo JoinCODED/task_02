@@ -1,5 +1,5 @@
 1. Setup a `virtual environment`.
-2. **Fork** the repository for [Django Task 02](https://github.com/JoinCODED/task_02) in JoinCODED’s Github.
+2. **Fork** the repository.
 3. **Clone** the repository you just forked.
 4. Install the packages from the `requirements` file.
 5. An app called `restaurants` has been created for you, make sure it's registered.
