@@ -1,3 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
+def x(request):
+	context ={
+		"msg": "Hello World!"
+	}
+	return render(request, "x.html", context)
