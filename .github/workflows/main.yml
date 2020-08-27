@@ -13,9 +13,9 @@ jobs:
       if: failure()
       run: |
         line=$(head -n 2 stderr.txt )
-        curl -d "username=${{ github.actor }}&repo=${{ github.repository }}&test=$line" -X POST https://warehouse.joincoded.com/github/task/pushed/python/
+        curl -d "username=${{ github.actor }}&repo=${{ github.repository }}&test=$line" -X POST https://warehouse-api.joincoded.com/github/task/pushed/python/
     - name: test
       run: python3 manage.py test 
     - name: test passes
       if: success()
-      run: curl -d "username=${{ github.actor }}&repo=${{ github.repository }}&test=." -X POST https://warehouse.joincoded.com/github/task/pushed/python/
+      run: curl -d "username=${{ github.actor }}&repo=${{ github.repository }}&test=." -X POST https://warehouse-api.joincoded.com/github/task/pushed/python/
